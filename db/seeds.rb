@@ -15,6 +15,9 @@ Coin.create!(
     { description: "Ethereum",
       acronym: "ETH",
       url_image: "",
-    },
+    }, { description: "Dash",
+      acronym: "DASH",
+      url_image: "",
+    }
   ]
 )
