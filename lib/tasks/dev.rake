@@ -4,17 +4,24 @@ namespace :dev do
 
     if Rails.env.development?
 
-      spinner = TTY::Spinner.new("[:spinner] Starting dev enviroment ...", format: :arrow_pulse)
-      # spinner.auto_spin
-      # puts %x(rails db:drop db:create db:migrate db:seed)
-      puts %x(rails db:drop)
-      puts %x(rails db:create)
-      puts %x(rails db:migrate)
-      puts %x(rails db:seed)
+      # IF METHOD CONTAINS ONLY LINE 'do' IS NOT REQUIRE TO USE 'yield' WITH RUBY BLOCK OF CODE
+      show_spinner("DB DROP") { puts %x(rails db:drop) }
+      show_spinner("DB CREATE") { puts %x(rails db:create)}
+      show_spinner("DB MIGRATE") { puts %x(rails db:migrate) }
+      show_spinner("DB SEED") { puts %x(rails db:seed) }
 
-      # spinner.stop("Completed!")
-      spinner.success('(successful upper enviroment!)')
     end
+
+  end
+
+  def show_spinner(start_msg, end_msg = "Completed successful!")
+
+    spinner = TTY::Spinner.new("[:spinner] #{start_msg} ...", format: :pulse_2)
+    spinner.auto_spin
+
+    yield
+
+    spinner.success(end_msg)
 
   end
 
