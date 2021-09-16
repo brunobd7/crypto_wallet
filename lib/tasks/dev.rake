@@ -10,8 +10,8 @@ namespace :dev do
       show_spinner("DB CREATE") { puts %x(rails db:create)}
       show_spinner("DB MIGRATE") { puts %x(rails db:migrate) }
       # show_spinner("DB SEED") { puts %x(rails db:seed) }
-      %x(rails dev:add_coins)
       %x(rails dev:add_mining_types)
+      %x(rails dev:add_coins)
 
     end
 
@@ -27,18 +27,22 @@ namespace :dev do
           { description: "Bitcoin",
             acronym: "BTC",
             url_image: "https://logospng.org/download/bitcoin/logo-bitcoin-2048.png",
+            mining_type: MiningType.all.sample
           },
           { description: "Ethereum",
             acronym: "ETH",
             url_image: "https://www.pikpng.com/pngl/m/25-250845_ethereum-png-kuma-restaurant-rabat-clipart.png",
+            mining_type: MiningType.all.sample
           },
           { description: "Dash",
             acronym: "DASH",
             url_image: "https://s2.coinmarketcap.com/static/img/coins/200x200/131.png",
+            mining_type: MiningType.all.sample
           },
           { description: "Cardano",
             acronym: "CDN",
             url_image: "https://w7.pngwing.com/pngs/844/873/png-transparent-cardano-zug-cryptocurrency-blockchain-ethereum-bitcoin-wallet-thumbnail.png",
+            mining_type: MiningType.all.sample
           }
         ]
 
