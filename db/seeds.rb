@@ -6,18 +6,7 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-Coin.create!(
-  [
-    { description: "Bitcoin",
-      acronym: "BTC",
-      url_image: "",
-    },
-    { description: "Ethereum",
-      acronym: "ETH",
-      url_image: "",
-    }, { description: "Dash",
-      acronym: "DASH",
-      url_image: "",
-    }
-  ]
-)
+
+
+
+#SEEDS ACTIONS TASK IN THE FILE DEV.RAKE
