@@ -1,4 +1,14 @@
-<h1>Welcome!</h1>
+<p>
+  <%#= link_to 'Português-BR','/?locale=pt-BR' %>
+  <%= link_to 'Português-BR',root_path(locale: 'pt-BR') %>
+</p>
+<p>
+  <%#= link_to 'English','/?locale=en' %>
+  <%= link_to 'English',root_path(locale: 'en') %>
+</p>
+
+
+<h1><%=I18n.t("welcome") %></h1>
 <!--<p> <b>Data: </b> <%#= data_ptbr(Date.today) %></p>-->
 <p> <b>Data: </b> <%= I18n.l(Date.today) %></p>
 <p><%= I18n.t('hello') %></p>

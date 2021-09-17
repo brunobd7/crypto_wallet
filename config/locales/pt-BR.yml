@@ -19,6 +19,7 @@ pt-BR:
         acronym: Sigla
         created_at: Criado em
         updated_at: Atualizado em
+  welcome: "Bem vindo!"
   hello: "Olá amigo!"
   links:
     edit: "Editar"
