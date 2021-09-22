@@ -1,23 +1,19 @@
-<p>
-  <%#= link_to 'Português-BR','/?locale=pt-BR' %>
-  <%= link_to 'Português-BR',root_path(locale: 'pt-BR') %>
-</p>
-<p>
-  <%#= link_to 'English','/?locale=en' %>
-  <%= link_to 'English',root_path(locale: 'en') %>
-</p>
+<div class="container py-4">
 
+  <header class="pb-3 mb-4 border-bottom">
+    <span class="fs-1">Crypto Wallet</span>
 
-<h1><%=I18n.t("welcome") %></h1>
-<!--<p> <b>Data: </b> <%#= data_ptbr(Date.today) %></p>-->
-<p> <b>Data: </b> <%= I18n.l(Date.today) %></p>
-<p><%= I18n.t('hello') %></p>
+  </header>
 
-<%= render "menu" %>
+  <div class="p-5 mb-4 bg-light rounded-3">
 
-<p>Apps running in <strong> <%= whos_ambient_rails %></strong></p>
+    <div class="container-fluid py-5">
+      <h1 class="display-5 fw-bold"> <%= I18n.t("welcome") %></h1>
+      <p class="col-md-8 fs-4"> <%= I18n.t("welcome_message") %></p>
 
-</br>
-<p><strong>INSTANCE/SESSION VARIABLES</strong></p>
-<p>User - <strong> <%= @nome %></strong></p>
-<p>Course - <strong> <%= @curso %></strong></p>
+      <%= render "menu" %>
+    </div>
+
+  </div>
+
+</div>

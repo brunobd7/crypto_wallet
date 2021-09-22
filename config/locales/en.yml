@@ -31,6 +31,7 @@
 
 en:
   welcome: "Welcome!"
+  welcome_message: "This is a your crypto wallet , to get started select any option bellow."
   hello: "Hello world"
   links:
    edit: "Edit"
