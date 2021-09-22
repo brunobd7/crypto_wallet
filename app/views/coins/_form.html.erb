@@ -30,7 +30,7 @@
   <div class="field">
     <%=form.label :mining_type_id %>
     <%#= coin.mining_type.description %>
-    <%= form.select("mining_type_id", @mining_type_options, { include_blank:true }) %>
+    <%= form.select("mining_type_id", @mining_type_options, { include_blank:true }, class:"form-select") %>
   </div>
 
   <div class="actions">

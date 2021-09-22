@@ -30,10 +30,30 @@
 # available at https://guides.rubyonrails.org/i18n.html.
 
 en:
+  activerecord:
+    models:
+      coin:
+       one: Coin
+       other: Coins
+      mining_type:
+        one: Mining Type
+        other: Mining Types
   welcome: "Welcome!"
   welcome_message: "This is a your crypto wallet , to get started select any option bellow."
+  confirm_message: "Are you sure?"
   hello: "Hello world"
   links:
    edit: "Edit"
    show: "Show"
    delete: "Delete"
+   new: "New"
+   back: "Back"
+  new:
+    coin: "New Coin"
+    mining_type: "New Mining Type"
+  editing:
+    coin: "Editing Coin"
+    mining_type: "Editing Mining Type"
+  showing:
+    coin: "Showing Coin"
+    mining_type: "Showing Mining Type"

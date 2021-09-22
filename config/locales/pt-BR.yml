@@ -1,8 +1,12 @@
 pt-BR:
   activerecord:
     models:
-      coin: Moeda
-      mining_type: Tipo de Mineração
+      coin:
+       one: Moeda
+       other: Moedas
+      mining_type:
+        one: Tipo de Mineração
+        other: Tipos de Mineração
     attributes:
       coin:
         id: Código
@@ -21,8 +25,20 @@ pt-BR:
         updated_at: Atualizado em
   welcome: "Bem vindo!"
   welcome_message: "Essa e sua carteira de crypt moedas, para comecar selecione uma das opcoes abaixo."
+  confirm_message: "Tem certeza?"
   hello: "Olá amigo!"
   links:
     edit: "Editar"
-    show: "Mostar"
+    show: "Mostrar"
     delete: "Apagar"
+    new: "Novo"
+    back: "Voltar"
+  new:
+    coin: "Nova Moeda"
+    mining_type: "Novo Tipo de Mineração"
+  editing:
+    coin: "Editando Moeda"
+    mining_type: "Editando Tipo de Mineração"
+  showing:
+    coin: "Mostrando Moeda"
+    mining_type: "Mostrando Tipo de Mineração"
