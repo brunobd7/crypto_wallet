@@ -7,8 +7,6 @@ import Rails from "@rails/ujs"
 import Turbolinks from "turbolinks"
 import * as ActiveStorage from "@rails/activestorage"
 import "channels"
-import Jquery from "jquery"
-import Notifyjs from "notify-js-legacy/notify"
 
 Rails.start()
 Turbolinks.start()
